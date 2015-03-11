@@ -1,3 +1,10 @@
+# Warning
+
+**Note that this is a very old gem that hasn't been supported since 2011.**\
+I am only supporting this gem insofar as it helps me and my projects. If you would like to contribute please
+go ahead and make a pull request.
+
+
 About rb-appscript
 ==================
 
