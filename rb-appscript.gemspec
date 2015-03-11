@@ -1,6 +1,4 @@
-require "rubygems"
-
-spec = Gem::Specification.new do |s|
+Gem::Specification.new do |s|
 	s.name = "rb-appscript"
 	s.version = "0.6.2"
 	s.homepage = "https://github.com/natesholland/rb-appscript"
@@ -8,12 +6,6 @@ spec = Gem::Specification.new do |s|
 	s.files = Dir["**/*"].delete_if { |name| ["MakeFile", "ae.bundle", "mkmf.log", "rbae.o", "SendThreadSafe.o", "src/osx_ruby.h", "src/osx_intern.h"].include?(name) }
 	s.extensions = "extconf.rb"
 	s.test_files = Dir["test/test_*.rb"]
-#	s.platform = Gem::Platform::CURRENT
 	s.required_ruby_version = ">= 1.8"
-end
-
-
-if $0==__FILE__
-	Gem::manage_gems
-	Gem::Builder.new(spec).build
+	s.authors     = ["Nate Holland"]
 end
